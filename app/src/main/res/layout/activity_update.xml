@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClickChooseImage"
+    android:orientation="vertical"
+    tools:context="com.example.country_mobilky.Upd">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_base"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:minWidth="250dp"
+        android:minHeight="250dp"
+        android:onClick="onClickChooseImage"
+        android:scaleType="fitXY"
+        android:src="@drawable/planet"/>
+    <EditText
+        android:id="@+id/UpCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_base"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Марка машины"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:id="@+id/UpPopulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UpCountry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Мощность"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/Down"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-2dp"
+        android:background="#9B786F"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#46344E"
+            android:onClick="onClickBack"
+            android:text="Назад"
+            android:textColor="@color/white"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/Change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#46344E"
+            android:minHeight="48dp"
+            android:onClick="onClickUpdate"
+            android:text="Изменить"
+            android:textColor="@color/white"
+            app:cornerRadius="10dp"
+
+            />
+
+        <Button
+            android:id="@+id/Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#46344E"
+            android:minHeight="48dp"
+            android:onClick="onClickDelete"
+            android:text="Удалить"
+            android:textColor="@color/white"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
