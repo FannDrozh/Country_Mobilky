@@ -10,7 +10,7 @@
         android:id="@+id/Up"
         android:layout_width="match_parent"
         android:layout_height="20dp"
-        android:background="#9B786F"
+        android:background="#D1E8E2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -22,7 +22,7 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/Down"
         android:layout_below="@+id/Up"
-        android:background="#6A9D8D8F"
+        android:background="#D1E8E2"
         android:orientation="vertical">
 
         <com.google.android.material.imageview.ShapeableImageView
@@ -72,7 +72,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginBottom="-2dp"
-        android:background="#9B786F"
+        android:background="#D1E8E2"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent">
 
@@ -84,10 +84,10 @@
             android:layout_marginHorizontal="45dp"
             android:layout_marginStart="50dp"
             android:layout_marginBottom="5dp"
-            android:backgroundTint="#46344E"
+            android:backgroundTint="#D9B08C"
             android:onClick="onClickBack"
             android:text="Назад"
-            android:textColor="@color/white"
+            android:textColor="#2C3531"
             app:cornerRadius="25dp"
             app:strokeWidth="1dp" />
 
@@ -100,11 +100,11 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="50dp"
             android:layout_marginBottom="5dp"
-            android:backgroundTint="#46344E"
+            android:backgroundTint="#2C3531"
             android:minHeight="48dp"
             android:onClick="onClickADD"
             android:text="Добавить"
-            android:textColor="@color/white"
+            android:textColor="#D9B08C"
             app:cornerRadius="25dp"
             app:strokeWidth="1dp" />
 

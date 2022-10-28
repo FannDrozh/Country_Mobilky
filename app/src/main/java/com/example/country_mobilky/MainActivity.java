@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     ListView listView;
     Adapter pAdapter;
     Spinner spinnerFilter;
-    String  label="Marka";
+    String  label="Country";
     String [] Filter={"без фильтрации","Популяция по возрастанию","Страна по алфавиту"};
 
 
@@ -200,14 +200,14 @@ public class MainActivity extends AppCompatActivity {
 
         int id=item.getItemId();
 
-        if(id==R.id.SearchName)
+        if(id==R.id.SearchCountry)
         {
-            label="Marka";
+            label="Country";
         }
         else
-        if(id==R.id.SearchPower)
+        if(id==R.id.SearchPopulation)
         {
-            label="Power";
+            label="Population";
         }
         return super.onOptionsItemSelected(item);
     }
@@ -222,12 +222,12 @@ public class MainActivity extends AppCompatActivity {
             ConSQL connectionHelper = new ConSQL();
             connection = connectionHelper.conclass();
             if (connection != null) {
-                if(label=="Marka")
+                if(label=="Country")
                 {
                     query = "Select * From Countries WHERE Country like'%"+str+"%'";
                 }
                 else
-                if(label=="Power")
+                if(label=="Population")
                 {
                     query = "Select * From Countries WHERE Population like'%"+str+"%'";
                 }

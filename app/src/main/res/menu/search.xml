@@ -8,11 +8,11 @@
     app:showAsAction="always"
     app:actionViewClass="android.widget.SearchView"/>
 
-    <item android:id="@+id/SearchName"
+    <item android:id="@+id/SearchCountry"
         android:orderInCategory="100"
-        android:title="Марка"
+        android:title="Страна"
         app:showAsAction="never"/>
-    <item android:id="@+id/SearchPower"
+    <item android:id="@+id/SearchPopulation"
         android:orderInCategory="100"
-        android:title=""
+        android:title="Популяция"
         app:showAsAction="never"/> </menu>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D1E8E2"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -12,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
 
-        android:background="#9B786F">
+        android:background="#FFCB9A">
 
         <Spinner
             android:id="@+id/filter"
@@ -37,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:background="#9B786F"
+        android:background="#FFCB9A"
         android:orientation="horizontal">
 
         <ImageButton
@@ -45,7 +46,7 @@
             android:layout_width="46dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
-            android:backgroundTint="#9B786F"
+            android:backgroundTint="#FFCB9A"
             android:onClick="onClickADD"
             android:src="@drawable/add"
             android:textAlignment="center"
@@ -64,8 +65,7 @@
         android:layout_above="@+id/Down"
         android:layout_below="@+id/Up"
         android:layout_marginTop="0dp"
-        android:layout_marginBottom="0dp"
-        android:background="#6A9D8D8F">
+        android:layout_marginBottom="0dp">
 
     </ListView>
 
